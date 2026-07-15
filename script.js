@@ -20,3 +20,12 @@ function checkPassword() {
     }
 
 }
+const passwordInput = document.getElementById("password");
+
+if (passwordInput) {
+    passwordInput.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            checkPassword();
+        }
+    });
+}
