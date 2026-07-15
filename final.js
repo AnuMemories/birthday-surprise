@@ -84,3 +84,48 @@ if (voiceBtn && voice) {
 
 }
 
+function typeEffect(selector, speed) {
+
+    const el = document.querySelector(selector);
+
+    if (!el) return;
+
+    const text = el.innerHTML;
+
+    el.innerHTML = "";
+
+    let i = 0;
+
+    const timer = setInterval(() => {
+
+        el.innerHTML = text.substring(0, i);
+
+        i++;
+
+        if (i > text.length) {
+
+            clearInterval(timer);
+
+            el.style.borderRight = "none";
+
+        }
+
+    }, speed);
+
+}
+
+window.addEventListener("load", () => {
+
+    setTimeout(() => {
+
+        typeEffect(".typing", 35);
+
+    }, 600);
+
+    setTimeout(() => {
+
+        typeEffect(".typing2", 35);
+
+    }, 2500);
+
+});

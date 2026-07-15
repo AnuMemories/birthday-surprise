@@ -135,3 +135,16 @@ font-size:22px;
     font-size:18px;
     font-style:italic;
 }
+.typing,
+.typing2{
+    overflow:hidden;
+    white-space:pre-wrap;
+    border-right:3px solid #ffd54f;
+    animation:blink .8s infinite;
+}
+
+@keyframes blink{
+    50%{
+        border-color:transparent;
+    }
+}
