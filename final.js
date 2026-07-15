@@ -62,25 +62,23 @@ function createHearts() {
 const bgMusic = document.getElementById("finalMusic");
 const voice = document.getElementById("voice");
 const voiceBtn = document.getElementById("voiceBtn");
-const voiceText = document.getElementById("voiceText");
 
 if (voiceBtn && voice) {
 
     voiceBtn.onclick = () => {
 
-        if (bgMusic) bgMusic.pause();
+    if (bgMusic) bgMusic.pause();
 
-        voice.play();
+    voiceBtn.innerHTML = "❤️ Thank you for listening...";
+    voiceBtn.disabled = true;
 
-        voiceBtn.style.display = "none";
+    voice.play();
 
-    };
+};
 
     voice.onended = () => {
 
-        voiceText.style.display = "block";
-
-    };
+};
 
 }
 
