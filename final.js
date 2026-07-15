@@ -59,3 +59,28 @@ function createHearts() {
     }, 700);
 
 }
+const bgMusic = document.getElementById("finalMusic");
+const voice = document.getElementById("voice");
+const voiceBtn = document.getElementById("voiceBtn");
+const voiceText = document.getElementById("voiceText");
+
+if (voiceBtn && voice) {
+
+    voiceBtn.onclick = () => {
+
+        if (bgMusic) bgMusic.pause();
+
+        voice.play();
+
+        voiceBtn.style.display = "none";
+
+    };
+
+    voice.onended = () => {
+
+        voiceText.style.display = "block";
+
+    };
+
+}
+

@@ -115,3 +115,23 @@ font-size:22px;
 }
 
 }
+#voiceBtn{
+    padding:15px 35px;
+    font-size:20px;
+    border:none;
+    border-radius:40px;
+    cursor:pointer;
+    background:#ff4d8d;
+    color:#fff;
+    box-shadow:0 10px 25px rgba(255,77,141,.35);
+    transition:.3s;
+}
+
+#voiceBtn:hover{
+    transform:scale(1.05);
+}
+
+#voiceText{
+    font-size:18px;
+    font-style:italic;
+}
