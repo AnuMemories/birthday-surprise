@@ -122,10 +122,4 @@ window.addEventListener("load", () => {
 
     }, 600);
 
-    setTimeout(() => {
-
-        typeEffect(".typing2", 35);
-
-    }, 2500);
-
 });
