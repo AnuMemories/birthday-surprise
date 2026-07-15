@@ -1,3 +1,16 @@
+const music = document.getElementById("finalMusic");
+
+window.addEventListener("load", () => {
+
+    if (music) {
+
+        music.volume = 0.6;
+
+        music.play().catch(() => {});
+
+    }
+
+});
 document.querySelectorAll("#story p").forEach(p => {
     p.style.display = "block";
 });
