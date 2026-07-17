@@ -13,6 +13,7 @@ function checkPassword() {
         }, 2000);
 
     } else {
+
         error.style.color = "#ff6b6b";
         error.innerHTML = "💔 Hmm... That's not the right name.";
 
